@@ -1,0 +1,27 @@
+GET http://localhost:8080/resources/authors
+
+###
+
+GET http://localhost:8080/resources/sights
+
+###
+
+POST http://localhost:8080/resources/blogPosts
+Content-Type: application/json
+
+{
+  "id": 3,
+  "headline": "Imperiales Erbe authentisch erleben!",
+  "fullText": "Das Schloss Schönbrunn ist die beliebteste Sehenswürdigkeit in Wien.",
+  "publicationDate": "2022-01-01",
+  "sight": {
+    "id": 2,
+    "location": "Wien",
+    "name": "Schönbrunn"
+  },
+  "author": {
+    "id": 1,
+    "firstName": "Max",
+    "lastName": "Mustermann"
+  }
+}
